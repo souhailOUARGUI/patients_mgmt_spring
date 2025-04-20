@@ -28,7 +28,15 @@ public class PatientController {
         model.addAttribute("pages", new int[patientPage.getTotalPages()]);
         model.addAttribute("currentPage", page);
         model.addAttribute("keyword", keyword);
+
         return "patients";
+    }
+
+
+    @GetMapping("/delete")
+    public String delete(Long id) {
+        patientRepository.deleteById(id);
+        return "redirect:/index";
     }
 
 }
