@@ -32,9 +32,11 @@ public class PatientsMgmtSpringApplication implements CommandLineRunner {
 //	//en utilisant builder
 //	Patient patient3  = Patient.builder().nom("souhail").dateNaissance(new Date()).malade(true).score(15).build();
 
-		patientRepository.save(Patient.builder().nom("yahya").dateNaissance(new Date()).malade(true).score(10).build());
-		patientRepository.save(Patient.builder().nom("souhail").dateNaissance(new Date()).malade(false).score(123).build());
-		patientRepository.save(Patient.builder().nom("mohamed").dateNaissance(new Date()).malade(true).score(23).build());
+//		patientRepository.save(Patient.builder().nom("yahya").dateNaissance(new Date()).malade(true).score(10).build());
+//		patientRepository.save(Patient.builder().nom("souhail").dateNaissance(new Date()).malade(false).score(123).build());
+//		patientRepository.save(Patient.builder().nom("mohamed").dateNaissance(new Date()).malade(true).score(23).build());
+
+
 
 	}
 }
