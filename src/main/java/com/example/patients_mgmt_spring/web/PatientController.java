@@ -33,6 +33,11 @@ public class PatientController {
     }
 
 
+    @GetMapping("/template1")
+    public String template1(Model model) {
+        return "template1";
+    }
+
     @GetMapping("/delete")
     public String delete(Long id, String keyword, int page) {
         patientRepository.deleteById(id);
